@@ -16,11 +16,38 @@ Page({
 
 
     goToPage2: function () {
-        wx.navigateTo({
-             url: '/pages/signup/signup',
-            })
+        // wx.navigateTo({
+        //      url: '/pages/signup/signup',
+        //     })
+        wx.getUserProfile({
+            desc:"巴拉巴拉",
+            success: (res) => {
+                console.log(res)
+              }
+        })
+
+        // wx.getSetting({
+        //   success(res)
+        //   {
+        //       console.log(res)
+        //       if (res.authSetting['scope.userInfo']){
+        //           console.log("以获取信息")
+        //       }
+        //       else{
+        //          console.log()
+        //       }
+        //   },
+        // })
+        
     },
 
+    getPhoneNum:function(res){
+        console.log(res)
+    },
+
+    bindGetUserInfo: function(res){
+console.log(res)
+    },
     /**
      * 生命周期函数--监听页面加载
      */
