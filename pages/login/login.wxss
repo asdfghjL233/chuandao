@@ -1,0 +1,21 @@
+/* pages/login/login.wxss */
+.btn1 {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .btn2 {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .btn3 {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .background {
+    background-size: 100% 100%;
+  }
+  
+    

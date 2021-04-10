@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<van-button round bind:click = 'goToPage1'>用户登陆</van-button>
+<van-button round bind:click = 'goToPage2' >立即注册</van-button>
+</view>
